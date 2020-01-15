@@ -2,11 +2,12 @@ import React from 'react';
 import BooksList from '../containers/BooksList';
 import BooksForm from './BooksForm';
 
-const App = () => (
+const App = () => {
+  return(
   <div className="app">
     <BooksList />
-    <BooksForm />
   </div>
-);
+  );
+};
 
 export default App;
