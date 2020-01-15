@@ -5,15 +5,9 @@ const Book = (props) => {
   const { book } = props;
   return (
     <tr key={book.id}>
-      <td>
-        { book.id }
-      </td>
-      <td>
-        { book.title }
-      </td>
-      <td>
-        { book.category }
-      </td>
+      <td>{ book.id }</td>
+      <td>{ book.title }</td>
+      <td>{ book.category }</td>
     </tr>
   );
 };
@@ -23,7 +17,7 @@ Book.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
 };
 
 export default Book;
