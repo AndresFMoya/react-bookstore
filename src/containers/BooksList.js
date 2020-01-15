@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-const BooksList = ({ books }) => {
-  const renderBooks = () => books.map(book => <Book key={book.id} book={book} />);
+const BooksList = (props) => {
+  const { books } = props;
 
   return (
     <table className="books-list">
@@ -15,14 +15,18 @@ const BooksList = ({ books }) => {
           <th>category</th>
         </tr>
       </thead>
-      <tbody>{renderBooks()}</tbody>
+      <tbody>
+        { books.map((book) => <Book book={book} key={book.id} />)}
+      </tbody>
     </table>
   );
 };
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf(PropTypes.object).isRequired,
+  books: PropTypes.arrayOf(PropTypes.object),
 };
 
-const mapStateToProps = state => ({ books: state.books });
+BooksList.defaultProps = { books: [{}] };
+
+const mapStateToProps = (state) => ({ books: state.books });
 export default connect(mapStateToProps, null)(BooksList);

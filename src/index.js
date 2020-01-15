@@ -5,8 +5,7 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import './index.css';
 import rootReducer from './reducers';
-
-const randomId = () => (Math.floor(Math.random() * (10 ** 6))).toString();
+import randomId from './components/randomId';
 
 const INITIAL_STATE = {
   books: [
