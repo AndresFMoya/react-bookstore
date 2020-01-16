@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { filterBook } from '../actions';
 
 const CategoryFilter = (props) => {
   const categories = ['Action', 'Biography', 'History', 'Horror',
@@ -9,14 +8,10 @@ const CategoryFilter = (props) => {
 
   const { filterBook, filter } = props;
 
-  const handleFilterChange = (event) => {
-    filterBook(event.target.value);
-  };
-
   return (
     <div>
       Filter by Category
-      <select value={filter} onChange={handleFilterChange}>
+      <select value={filter} onChange={filterBook}>
         <option value="All">All</option>
         { categories.map(category => (
           <option value={category} key={category}>
@@ -37,7 +32,6 @@ CategoryFilter.defaultProps = {
   filter: 'All',
 };
 
-const mapDispatchToProps = dispatch => ({ filterBook: filter => dispatch(filterBook(filter)) });
 const mapStateToProps = state => ({ filter: state.filter });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CategoryFilter);
+export default connect(mapStateToProps, null)(CategoryFilter);
