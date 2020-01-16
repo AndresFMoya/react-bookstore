@@ -13,6 +13,7 @@ const INITIAL_STATE = {
     { id: randomId(), title: 'Book # 2 Title', category: 'kids' },
     { id: randomId(), title: 'Book # 3 Title', category: 'learning' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, INITIAL_STATE);
