@@ -18,7 +18,7 @@ const CategoryFilter = (props) => {
       Filter by Category
       <select value={filter} onChange={handleFilterChange}>
         <option value="All">All</option>
-        { categories.map((category) => (
+        { categories.map(category => (
           <option value={category} key={category}>
             {category}
           </option>
@@ -37,7 +37,7 @@ CategoryFilter.defaultProps = {
   filter: 'All',
 };
 
-const mapDispatchToProps = (dispatch) => ({ filterBook: (filter) => dispatch(filterBook(filter)) });
-const mapStateToProps = (state) => ({ filter: state.filter });
+const mapDispatchToProps = dispatch => ({ filterBook: filter => dispatch(filterBook(filter)) });
+const mapStateToProps = state => ({ filter: state.filter });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CategoryFilter);
