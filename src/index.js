@@ -9,10 +9,11 @@ import randomId from './components/randomId';
 
 const INITIAL_STATE = {
   books: [
-    { id: randomId(), title: 'Book # 1 Title', category: 'biography' },
-    { id: randomId(), title: 'Book # 2 Title', category: 'kids' },
-    { id: randomId(), title: 'Book # 3 Title', category: 'learning' },
+    { id: randomId(), title: 'Book # 1 Title', category: 'Biography' },
+    { id: randomId(), title: 'Book # 2 Title', category: 'Kids' },
+    { id: randomId(), title: 'Book # 3 Title', category: 'Learning' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, INITIAL_STATE);
