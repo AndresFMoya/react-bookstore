@@ -9,9 +9,8 @@ import randomId from './components/randomId';
 
 const INITIAL_STATE = {
   books: [
-    { id: randomId(), title: 'Book # 1 Title', category: 'Biography' },
-    { id: randomId(), title: 'Book # 2 Title', category: 'Kids' },
-    { id: randomId(), title: 'Book # 3 Title', category: 'Learning' },
+    { id: randomId(), title: 'Becoming', category: 'Biography' },
+    { id: randomId(), title: 'The Very Hungry Caterpillar', category: 'Kids' },
   ],
   filter: 'All',
 };

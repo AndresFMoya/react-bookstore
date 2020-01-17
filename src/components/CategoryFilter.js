@@ -9,9 +9,11 @@ const CategoryFilter = (props) => {
   const { filterBook, filter } = props;
 
   return (
-    <div>
-      Filter by Category
-      <select value={filter} onChange={filterBook}>
+    <div className="category-section d-flex align-items-center pt-2">
+      <h1 className="bookstore-CMS m-1">Bookstore CMS</h1>
+      <div className="books m-1">BOOKS</div>
+      <div className="categories m-1">CATEGORIES</div>
+      <select className="category m-1" value={filter} onChange={filterBook}>
         <option value="All">All</option>
         { categories.map(category => (
           <option value={category} key={category}>

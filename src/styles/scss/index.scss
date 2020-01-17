@@ -1,0 +1,97 @@
+.app {
+    font-family: Montserrat, serif;
+}
+.panel-bg {
+    border-radius: 4px;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fafafa;
+}
+.category-section {
+    .bookstore-CMS {
+        font-size: 30px;
+        font-weight: bold;
+        color: #0290ff;
+    }
+    .books {
+        width: 100px;
+        font-size: 13px;
+        letter-spacing: 1.9px;
+        color: #121212;
+    }
+    .categories, .category {
+        width: 105px;
+        opacity: 0.5;
+        font-size: 13px;
+        letter-spacing: 1.9px;
+        color: #121212;
+    }
+}
+.book {
+    height: 170px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+    .title {
+        height: 29px;
+        font-family: RobotoSlab, serif;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: -0.2px;
+        color: #121212;
+    }
+    .remove {
+        border: 0.5px solid;
+        background-color: #ffffff;
+        width: 60px;
+        height: 25px;
+        font-family: RobotoSlab, serif;
+        font-size: 14px;
+        font-weight: 300;
+        color: #4386bf;
+    }
+    .category {
+        height: 18px;
+        opacity: 0.5;
+        font-family: Montserrat, serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #121212;
+    }
+}
+.add-book {
+    .title {
+        height: 24px;
+        width: 1000px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: -0.18px;
+        color: #888888;
+    }
+    .book-input {
+        height: 45px;
+        width: 1000px;
+        border-radius: 4px;
+        border: solid 1px #e8e8e8;
+        background-color: #ffffff;
+        font-size: 16px;
+        letter-spacing: -0.15px;
+        color: #c4c4c4;
+    }
+    .category {
+        height: 45px;
+        border-radius: 4px;
+        border: solid 1px #e8e8e8;
+        background-color: #ffffff;
+        font-size: 16px;
+        letter-spacing: -0.15px;
+        color: #c4c4c4;
+    }
+    button {
+        width: 143px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+}

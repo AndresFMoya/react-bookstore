@@ -49,13 +49,18 @@ const BooksForm = (props) => {
   );
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input placeholder="Book title" onChange={handleChange} value={state.title} name="title" />
-      <select onChange={handleChange} value={state.category} name="category">
-        {categories.map(category => renderOption(category))}
-      </select>
-      <button type="submit">Add</button>
-    </form>
+    <div className="panel-bg d-flex">
+      <form onSubmit={handleSubmit} className="add-book d-flex flex-column w-100">
+        <h4 className="title">ADD NEW BOOK</h4>
+        <div className="d-flex align-items-center">
+          <input placeholder="Book Title" onChange={handleChange} value={state.title} name="title" className="book-input m-4" />
+          <select onChange={handleChange} value={state.category} name="category" className="category m-4">
+            {categories.map(category => renderOption(category))}
+          </select>
+          <button className="btn btn-primary" type="submit">ADD BOOK</button>
+        </div>
+      </form>
+    </div>
   );
 };
 
