@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
-import './index.css';
+import './styles/scss/index.scss';
 import rootReducer from './reducers';
 import randomId from './components/randomId';
 
