@@ -9,12 +9,13 @@ const Book = (props) => {
   };
 
   return (
-    <tr key={book.id}>
-      <td>{ book.id }</td>
-      <td>{ book.title }</td>
-      <td>{ book.category }</td>
-      <td><button type="button" onClick={handleRemoveBook}>remove</button></td>
-    </tr>
+    <div className="book card m-4" key={book.id}>
+      <div className="book-info p-5">
+        <div className="category">{ book.category }</div>
+        <div className="title">{ book.title }</div>
+        <button className="remove" type="button" onClick={handleRemoveBook}>Remove</button>
+      </div>
+    </div>
   );
 };
 

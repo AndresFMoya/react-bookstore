@@ -21,16 +21,8 @@ const BooksList = (props) => {
   return (
     <div>
       <CategoryFilter filterBook={handleFilterChange} />
-      <table className="books-list">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
+      <div className="">
+        <div>
           { books.filter(book => (filter === 'All' || book.category === filter)).map(book => (
             <Book
               book={book}
@@ -38,8 +30,8 @@ const BooksList = (props) => {
               remove={handleRemoveBook}
             />
           ))}
-        </tbody>
-      </table>
+        </div>
+      </div>
     </div>
   );
 };
