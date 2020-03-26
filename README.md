@@ -1,5 +1,5 @@
 # ReactJS - Bookstore CMS
-This project consist of building a bookstore management tool with React and Redux
+This project consists of building a bookstore management tool with React and Redux
 
 ## Technologies used
 
@@ -12,8 +12,13 @@ This project consist of building a bookstore management tool with React and Redu
 - Stickler
 - ESLint
 
-## [Live Version](https://sheltered-retreat-14877.herokuapp.com)
+## [Live Version](https://react-bookstore-001.herokuapp.com)
 
+##  Potential Future Features.
+
+- Improve User Interface. 
+- Back-End implementation to persist data.
+- Implement Authentication/Authorization system.
 
 ## 🤝 Contributing
 
